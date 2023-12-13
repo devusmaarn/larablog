@@ -38,13 +38,13 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/web.php'));
         });
 
-        Livewire::setUpdateRoute(function ($handle) {
-            $url =  '/public/livewire/update';
-            return Route::post($url, $handle);
-        });
+        // Livewire::setUpdateRoute(function ($handle) {
+        //     $url =  '/public/livewire/update';
+        //     return Route::post($url, $handle);
+        // });
 
-        Livewire::setScriptRoute(function ($handle) {
-            return Route::get('/public/livewire/livewire.js', $handle);
-        });
+        // Livewire::setScriptRoute(function ($handle) {
+        //     return Route::get('/public/livewire/livewire.js', $handle);
+        // });
     }
 }
